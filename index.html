@@ -33,7 +33,7 @@
     <!-- begin main section -->
     <main>
       <!-- hero section -->
-      <div class="main">
+      <div class="hero-section">
         <h4>Hi, My name is <span>Developer</span></h4>
         <p class="title">Freelance Full Time Student</p>
         <p class="subtitle">
@@ -47,7 +47,7 @@
         />
       </div>
       <!-- end hero section -->
-      <div class="item-wrapper">
+      <div class="service-assurance">
         <!-- start ASSURANCE section -->
         <!-- first assurance item -->
         <div class="item">
@@ -84,7 +84,114 @@
         </div>
       </div>
       <!-- end ASSURANCE section -->
+
+      <!-- start of about me section -->
+      <!-- section header -->
+
+      <h5 class="section-separator-title">A Little About Me...</h5>
+      <div class="about-me">
+        <!-- since div for left only has one child (photo from website example)
+         and the right side has multiple children, use div for right child -->
+        <img
+          src="./assets/img/20231214_212806.jpg"
+          alt="Portfolio image of Developer"
+        />
+        <div class="info">
+          <h3>Hello There...</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            reiciendis, ipsa mollitia qui iusto dolores? Aperiam dolore quod ea
+            soluta, labore unde, placeat provident ratione sapiente porro minima
+            amet? Beatae.
+          </p>
+          <button class="hire-btn">Hire Me</button>
+        </div>
+      </div>
+      <!-- end of ABOUT ME section -->
+      <!-- start of skillset/skills section -->
+      <h5 class="section-separator-title">Overview of</h5>
+      <div class="skills">
+        <!-- create a two column layout -->
+        <div class="left">
+          <div class="info">
+            <h3>My Programming Skills</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              ab minima animi debitis suscipit dicta maiores dolorem similique
+              velit neque! Officia nobis, libero quam sint nesciunt blanditiis
+              fuga distinctio inventore!
+            </p>
+            <button class="hire-btn">Hire Me</button>
+          </div>
+        </div>
+        <div class="right">
+          <!-- for each icon create a container and then put it inside a container -->
+          <div class="icon"><i class="bx bxl-html5"></i></div>
+          <div class="icon"><i class="bx bxl-react"></i></div>
+          <div class="icon"><i class="bx bxl-css3"></i></div>
+          <div class="icon"><i class="bx bxl-javascript"></i></div>
+          <div class="icon"><i class="bx bxl-typescript"></i></div>
+          <div class="icon"><i class="bx bxl-nodejs"></i></div>
+          <div class="icon"><i class="bx bxl-postsql"></i></div>
+          <div class="icon"><i class="bx bxl-mongodb"></i></div>
+          <div class="icon"><i class="bx bxl-python"></i></div>
+          <div class="icon"><i class="bx bxl-aws"></i></div>
+          <div class="icon"><i class="bx bxl-git"></i></div>
+          <div class="icon"><i class="bx bxl-github"></i></div>
+        </div>
+      </div>
+      <!-- end skill section -->
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="start">
+        <h3>Start a New Project Journey?</h3>
+        <p>
+          Curious to know what your dreams and visions for your company may look
+          like on the Web? Let's talk about it and make it a reality!
+        </p>
+        <button>Get in Touch</button>
+      </div>
+
+      <div class="cols">
+        <div class="about-col">
+          <h3>Developer</h3>
+          <p>Developer</p>
+        </div>
+
+        <!-- footer columns for  -->
+        <div class="links-col">
+          <h4>Useful Links</h4>
+          <a href="#">Home</a>
+          <a href="#">Skills</a>
+          <a href="#">Project</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+
+        <div class="links-col">
+          <h4>Social Media</h4>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Youtube</a>
+          <a href="#">Github</a>
+          <a href="#">Twitter/X</a>
+        </div>
+
+        <div class="news-col">
+          <h4>Newsletter</h4>
+          <p>Register your email to know more from me!</p>
+          <form action="" method="post">
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="email@yourmail.com"
+            />
+            <button><i class="bx bxl-telegram"></i></button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

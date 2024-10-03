@@ -1,0 +1,77 @@
+/* import the google api font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0; /*supress browser defaults and select alternative box model  */
+  padding: 0; /*  */
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* set variables for colors */
+  --bg-primary: rgb(175, 194, 213);
+  --bg-secondary: rgb(40, 83, 107);
+  --font-color-primary: rgb(135, 92, 116);
+  --font-color-secondary: rgb(000, 000, 60);
+  --backup-color: rgb(252, 246, 177);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+/* style the nav */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px;
+}
+
+.navbar h2 {
+  color: var(--font-color-primary);
+  font-weight: 700;
+}
+
+.navbar nav ul {
+  display: flex; /* if this doesn't work use align items and justify content */
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  font-size: 16px;
+  margin-right: 25px;
+  transition: color 0.3 ease; /* animation must be triggered by an event */
+}
+/* the event that triggers line 54 and specify outcome of transition */
+.navbar ul li:hover a {
+  color: var(--font-color-primary);
+}
+
+/* remove margin of rightmost list item: see line 53 */
+.navbar ul li:last-child a {
+  margin-right: 0;
+}
+
+.hire-btn {
+  background: var(--backup-color);
+  color: var(--font-color-primary);
+  padding: 6px 16px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.hire-btn:hover {
+  background: var(--font-color-secondary);
+  color: var(--bg-primary);
+}
