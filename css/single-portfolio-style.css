@@ -1,6 +1,7 @@
 /* import the google api font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* will realistically change these colors to be more web friendly */
 *,
 *::before,
 *::after {
@@ -11,9 +12,9 @@
   /* set variables for colors */
   --bg-primary: rgb(175, 194, 213);
   --bg-secondary: rgb(40, 83, 107);
-  --font-color-primary: rgb(135, 92, 116);
+  --font-color-primary: rgb(78, 50, 66);
   --font-color-secondary: rgb(000, 000, 60);
-  --backup-color: rgb(252, 246, 177);
+  --backup-color: rgb(168, 153, 153);
 }
 
 body {
@@ -74,4 +75,56 @@ body {
 .hire-btn:hover {
   background: var(--font-color-secondary);
   color: var(--bg-primary);
+}
+/* styling the hero section */
+.hero-section {
+  height: 640px; /* shazam */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* spc-btwn, spe-e, spc-aro might be better options */
+}
+
+.hero-section h4 {
+  font-size: 32px;
+  color: var(--font-color-primary);
+  font-weight: 600;
+}
+
+.hero-section h4 span {
+  color: var(--font-color-secondary);
+  text-decoration: underline;
+}
+
+/* class name of a paragraph=title */
+.hero-section p.title {
+  font-size: 44px; /* shazam */
+  font-weight: 600;
+  color: var(--font-color-primary);
+  margin-top: 8px; /* shazam */
+}
+
+.hero-section p.subtitle {
+  font-size: 16px;
+  color: var(--font-color-primary);
+  margin-top: 8px;
+}
+
+.hero-section img {
+  width: 200px;
+  height: 150px;
+  margin-top: 100px;
+  border-radius: 65%;
+}
+
+/* style the services assurance sub section after hero section */
+.service-assurance {
+  margin-top: 50px;
+  padding: 0 50px;
+  display: flex; /* can also use align items and justify content */
+  /* flex wrap: no-wrap means if item grows, it will not be contained*/
+}
+
+.service-assurance .item {
+  background: var(--bg-secondary);
 }
